@@ -20,7 +20,7 @@ app.post("/", function(req,res){
 
   var city = req.body.city;
 
-  
+
 
     const url ="https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=155c4689eb1b169fdb51abfabcb40afb&units=metric#";
     https.get(url, function(response){
@@ -59,7 +59,12 @@ app.post("/", function(req,res){
 
 
 
+  let port = process.env.PORT;
+  if(port == null || port ==""){
+    port=3000;
+  }
 
-app.listen(3000,function(){
-  console.log("Server is running at 3000.");
-})
+
+  app.listen(port, function() {
+    console.log("Server started succesfully");
+  });
