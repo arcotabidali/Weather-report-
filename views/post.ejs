@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/weather.png" />
+    <title>Weather report</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+  </head>
+  <body class="bagge">
+    <div class="">
+      <img class="full" src="/images/title2.png" alt="">
+    </div>
+
+<div class="">
+
+<img src="<%=str%>">
+  <h3>The temparature in <%=city%>  is  <%=temp%> degree celcius</h3>
+  <h5>The Weather currently is  <%=weatherDescription %>  </h5>
+
+</div>
+
+
+<div class="padder">
+
+  <form action="/" method="post">
+    <input type="text" name="city" placeholder="Enter the city name" value="">
+    <button class="btn btn-outline-dark" type="submit" name="submit" id="button-addon1">check</button>
+
+  </form>
+
+</div>
+
+<div class="footer-padding padder"></div>
+  <div class="footer">
+  <p>© Copyright 2020 Abid Ali</p>
+  </div>
+
+
+  </body>
+</html>
